@@ -1,10 +1,10 @@
 name: "Xcode Builder"
 description: |
   Performs Xcode build, test, analyze or archive action, based on it's input.
-website: https://github.com/bitrise-io/steps-xcode-builder
-fork_url: https://github.com/bitrise-io/steps-xcode-builder
+website: https://github.com/LoungeBuddy/steps-xcode-builder
+fork_url: https://github.com/LoungeBuddy/steps-xcode-builder
 source:
-  git: https://github.com/bitrise-io/steps-xcode-builder.git
+  git: https://github.com/LoungeBuddy/steps-xcode-builder.git
 host_os_tags:
   - "osx-10.9"
   - "osx-10.10"

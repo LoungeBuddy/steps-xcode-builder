@@ -418,10 +418,10 @@ if [[ "${XCODE_BUILDER_ACTION}" == "archive" ]] ; then
     do
     	echo " * embedded.mobileprovision: ${a_emb_path}"
     	if [ ! -z "${embedded_mobile_prov_path}" ] ; then
-            finalcleanup "More than one \`embedded.mobileprovision\` found in \`${ARCHIVE_PATH}/Products/Applications/*.app\`"
-    		exit 1
+          echo "More than one \`embedded.mobileprovision\` found in \`${ARCHIVE_PATH}/Products/Applications/*.app\`"
+      else
+        embedded_mobile_prov_path="${a_emb_path}"  
     	fi
-    	embedded_mobile_prov_path="${a_emb_path}"
     done
     unset IFS
     if [ -z "${embedded_mobile_prov_path}" ] ; then
